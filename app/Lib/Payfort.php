@@ -13,22 +13,22 @@ class Payfort
     /**
      * @var string your Merchant Identifier account (mid)
      */
-    public $merchantIdentifier = 'xAXQCIwJ';
+    public $merchantIdentifier = env('MERCHANT_ID');
 
     /**
      * @var string your access code
      */
-    public $accessCode         = 'UP2Dox4vpThVnJVaP2tc';
+    public $accessCode         = env('ACCESS_CODE');
 
     /**
      * @var string SHA Request passphrase
      */
-    public $SHARequestPhrase   = 'ertyuiifd';
+    public $SHARequestPhrase   = env('SHA_REQUEST_PHRASE');
 
     /**
      * @var string SHA Response passphrase
      */
-    public $SHAResponsePhrase = 'dfhjkjhgfd';
+    public $SHAResponsePhrase = env('SHA_RESPONSE_PHRASE');
 
     /**
      * @var string SHA Type (Hash Algorith)
